@@ -1,13 +1,12 @@
-# ref: https://docs.travis-ci.com/user/languages/python
 language: python
 python:
-  - "3.2"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  #- "3.5-dev" # 3.5 development branch
-  #- "nightly" # points to the latest development branch e.g. 3.6-dev
-# command to install dependencies
-install: "pip install -r requirements.txt"
-# command to run tests
+- '3.2'
+- '3.3'
+- '3.4'
+- '3.5'
+install: pip install -r requirements.txt
 script: nosetests
+env:
+  global:
+  - secure: XwvUwOG34fzD8S+dWYx5qCRoYPkn6FlQ2wafYraVrvR356c4oIT1uN6FK343MmulLPUH1fu3AkaMOR0GYMjFeRs20HjDzXkvCSuJ49ZnkA6cuwJSNvKbg0YMla8wj3uZt8IhYleSg6xSWdfVrKyGkOIxoFrzHb1yrhnJHzxbc8A2isw9xVZZ+zisrM39CRz+NuB98R86W7hxT5Q3jX3Bppyr0/IjQUowRJhBlC8g8cRDNSOBGrRViiuJXeVLQYCr/FUOW1eQJ/3/DHNrXSCQQ9GF/G8MFo+3X08uXzFd5ZswgTDSwTWgF3n82Aefueoqf6DYw/yPz4Hjy/0Uz5GlP4fUc1uMyvAY1382cU8DkuGjwOm/CuosnwYMSgMm66kTjAj8s1LKxadz2qaKqAe8+5yWesZBlyARd7/WUwcf9y9IpOhqZ2e83bxB9r/Q8WykxAuYvSHawSWrf3wliQrro3UpmomrhpyKmg/dcS6zj5JBiXuvr9h/BXCUEWY0TCYCW5lVhbKfVx/e0/9OmYFjC9LiMy0ffxygjSRIkdW0W0gGjpEDHXLSrRgsqJDnnb30GIql+uVwre9HOhUD51dUfx1THnsGZoRIut44kEm1j4MYxPTSFSQUz9UyHawJYgP/k8rWTPSfU1VX8LS2SMK3r43Ve4rBAjpUQ1u2MS5Xhzk=
+  - secure: KCttPsFmbiGtRpRDpdPdYoT8XLxVkF6DseqDWPkhLHJ7o9g3/fQ/AdEWntNvkiwev3D6E7a20y8EsRqDn6HENQsvjhxRoSyx/pTYDR4xFeZImDl0R0qiCCsi1AFqOPN5v4SmZ77+HAdNl5G19qHVk3V67WN8CSw8zoQkWZBofrhBq04yZkzLkcO0qXGXWVdKI722fhrNyGDqFHSuBqCGQllMqaf9xUKyGbUOiZt77d5oug+50s8gx7zdBp2RMdAfO5++dVY8lDlkuBfIEAc+oMLKQUb4gLZxXcxQ7Ru67aNtXglhwSBKApqUJ5fIATf4wrfSphIYQLRHyin7oWfLjJIuW9Yh+3mbwS89e4InAS2PvrzJfWSzLrSYRSbRAYawvhbmFDv+Felvr5lGsm1neGbZl8xd6VbM2wbOvV3+7PxZmdbdm4SkvLeyLpzUBrD2dYb1PiHqpK0Ho1k0zWYh+/hz+VuC7l6a07LTnDKTnV7fFCyTdG6FwAGmr+3biRb3pl9BLFuDTjC6EM9Fh9oaQK6RN0uja5vHMwrQtGbmfkiAdKCld6YMNrsIdiZnNWaBWMNxRH63WPgKNKEQGQ+6e09J6YEQcLjpZ5lITLo5MNyt1s99BgostK2OAHvzIgpJcVfW+dW2PUjnYh6fJpFsHBmEFZN/MNYdQzuKT+aZUQ0=
