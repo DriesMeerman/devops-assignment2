@@ -35,6 +35,11 @@ To launch the integration tests, use tox:
 sudo pip install tox
 tox
 ```
+To run them manually
+```
+cd '.\users\dries\google drive\school\UvA\year 2\3. Devops\assignments\ass 2\python-flask-server'
+python -m unittest -v
+```
 
 ## Running with Docker
 
